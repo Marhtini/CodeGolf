@@ -3,4 +3,4 @@
 // This version only returns 0 for Odd and 1 for Even, removing the need for the printf() function.
 
 #include <stdio.h>
-void main(){int n;scanf("%d",&n);if(n&1){printf("%d:True",n);}else{printf("%d:False",n);}}
+int main(){int n;scanf("%d",&n);if(n&1)return 0;else return 1;}
