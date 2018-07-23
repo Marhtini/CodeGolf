@@ -8,9 +8,9 @@
 #include <stdlib.h>
 
 int main() {
-    char* inputString[100];
+    char* inputString[1000];
     char checkForString[] = "0123456789";
-    fgets(inputString,100,stdin);
+    fgets(inputString,1000,stdin);
  
     frequency(inputString,checkForString);
     
@@ -34,9 +34,7 @@ void frequency(char* pInputString, char* pCheckFor){
             else{;}
         }
     }
-    
     for(k=0;k<=9;k++){
         printf("%d ",howManyInstances[k]);
     }
-    
 }
